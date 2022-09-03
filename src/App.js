@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
-function App() {
+import Pads from './Pads';
+import DrumPad from './assets/DrumPads';
+
+export default function App() {
+  const [currentPad, setCurrentPad] = useState('');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="drum-machine">
+      <div id="display">
+        <p>{currentPad}</p>
+      </div>
+
+      <div className="pads">
+        { Pads.map((pad) => (
+          <DrumPad
+            key={pad.id}
+            pad={pad}
+            setCurrentPad={setCurrentPad}
+          />
+        ))}
+      </div>
     </div>
   );
 }
-
-export default App;
