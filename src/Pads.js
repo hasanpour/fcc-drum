@@ -25,7 +25,7 @@ const Pads = [
   },
   {
     id: 'conga',
-    name: 'TAMB',
+    name: 'CONGA',
     audio: conga,
     key: 'E',
     keyCode: 69,
