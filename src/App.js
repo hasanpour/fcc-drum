@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 
 import Pads from './Pads';
 import DrumPad from './Components/DrumPads';
+import Volume from './Components/7Segments/Volume';
+import AudioName from './Components/7Segments/AudioName';
 import Logo from './assets/images/logo.png';
 
 import './App.css';
 
 export default function App() {
-  const [currentPad, setCurrentPad] = useState('');
   // eslint-disable-next-line no-unused-vars
   const [volume, setVolume] = useState(100);
+  const [audioName, setAudioName] = useState('');
 
   return (
     <>
@@ -25,18 +27,20 @@ export default function App() {
               <DrumPad
                 key={pad.id}
                 pad={pad}
-                setCurrentPad={setCurrentPad}
+                setAudioName={setAudioName}
               />
             ))}
           </div>
 
           <div className="displays">
-            <div className="display__volume">
-              <p>{currentPad}</p>
-            </div>
-            <div id="display">
-              <p>{currentPad}</p>
-            </div>
+            <Volume
+              className="display__volume"
+              volume={volume}
+            />
+            <AudioName
+              id="display"
+              audioName={audioName}
+            />
           </div>
         </div>
 

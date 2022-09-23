@@ -1,0 +1,93 @@
+.display-container {
+  position: relative;
+  width: 122px;
+  /* height: 220px; */
+  margin-bottom: 100px;
+}
+
+.display-container .segment-x,
+.display-container .segment-y {
+  position: absolute;
+}
+
+.display-container .segment-border {
+  display: block;
+  position: absolute;
+}
+
+.display-container .segment-x {
+  width: 72px;
+  left: 13px;
+  border-bottom: 12px solid #ff0000;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+
+.display-container .segment-x .segment-border {
+  top: 12px;
+  left: -12px;
+  right: -12px;
+  border-top: 12px solid #ff0000;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+
+.display-container .segment-y {
+  height: 72px;
+  width: 0;
+  border-right: 12px solid #ff0000;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+.display-container .segment-y .segment-border {
+  position: relative;
+  left: 12px;
+  height: 72px;
+  margin-top: -12px;
+  border-left: 12px solid #ff0000;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+.display-container .segment-a {
+  top: 0;
+}
+
+.display-container .segment-b {
+  top: 13px;
+  left: 98px;
+}
+
+.display-container .segment-c {
+  top: 111px;
+  left: 98px;
+}
+
+.display-container .segment-d {
+  top: 196px;
+}
+
+.display-container .segment-e {
+  top: 111px;
+  left: 0px;
+}
+
+.display-container .segment-f {
+  top: 13px;
+  left: 0px;
+}
+
+.display-container .segment-g {
+  top: 98px;
+}
+
+/* clock */
+
+.clock-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  scale: 0.3;
+}

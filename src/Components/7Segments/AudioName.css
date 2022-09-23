@@ -1,0 +1,149 @@
+/* Characters display */
+
+.display-a .segment-d {
+  opacity: 0.1;
+}
+
+.display-b .segment-a,
+.display-b .segment-b {
+  opacity: 0.1;
+}
+
+.display-c .segment-b,
+.display-c .segment-c,
+.display-c .segment-g {
+  opacity: 0.1;
+}
+
+.display-d .segment-a,
+.display-d .segment-f {
+  opacity: 0.1;
+}
+
+.display-e .segment-b,
+.display-e .segment-c {
+  opacity: 0.1;
+}
+
+.display-f .segment-b,
+.display-f .segment-c,
+.display-f .segment-d {
+  opacity: 0.1;
+}
+
+.display-g .segment-b,
+.display-g .segment-g {
+  opacity: 0.1;
+}
+
+.display-h .segment-a,
+.display-h .segment-d {
+  opacity: 0.1;
+}
+
+.display-i .segment-a,
+.display-i .segment-b,
+.display-i .segment-c,
+.display-i .segment-d,
+.display-i .segment-g {
+  opacity: 0.1;
+}
+
+.display-j .segment-a,
+.display-j .segment-e,
+.display-j .segment-f,
+.display-j .segment-g {
+  opacity: 0.1;
+}
+
+.display-k .segment-b,
+.display-k .segment-d {
+  opacity: 0.1;
+}
+
+.display-l .segment-a,
+.display-l .segment-b,
+.display-l .segment-c,
+.display-l .segment-g {
+  opacity: 0.1;
+}
+
+.display-m .segment-c,
+.display-m .segment-e,
+.display-m .segment-g {
+  opacity: 0.1;
+}
+
+.display-n .segment-d,
+.display-n .segment-g {
+  opacity: 0.1;
+}
+
+.display-o .segment-g {
+  opacity: 0.1;
+}
+
+.display-p .segment-c,
+.display-p .segment-d {
+  opacity: 0.1;
+}
+
+.display-q .segment-d,
+.display-q .segment-e {
+  opacity: 0.1;
+}
+
+.display-r .segment-a,
+.display-r .segment-b,
+.display-r .segment-c,
+.display-r .segment-d,
+.display-r .segment-f {
+  opacity: 0.1;
+}
+
+.display-s .segment-b,
+.display-s .segment-e {
+  opacity: 0.1;
+}
+
+.display-t .segment-a,
+.display-t .segment-b,
+.display-t .segment-c {
+  opacity: 0.1;
+}
+
+.display-u .segment-a,
+.display-u .segment-g {
+  opacity: 0.1;
+}
+
+.display-v .segment-a,
+.display-v .segment-b,
+.display-v .segment-e,
+.display-v .segment-f,
+.display-v .segment-g {
+  opacity: 0.1;
+}
+
+.display-w .segment-b,
+.display-w .segment-f,
+.display-w .segment-g {
+  opacity: 0.1;
+}
+
+.display-x .segment-b,
+.display-x .segment-c,
+.display-x .segment-e,
+.display-x .segment-f {
+  opacity: 0.1;
+}
+
+.display-y .segment-a,
+.display-y .segment-e {
+  opacity: 0.1;
+}
+
+.display-z .segment-c,
+.display-z .segment-f {
+  opacity: 0.1;
+}

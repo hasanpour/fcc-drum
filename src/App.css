@@ -94,3 +94,7 @@ main {
   box-shadow: 0 1px 2px 0 rgb(255 255 255 / 30%);
   background: rgba(255, 255, 255, 0.3);
 }
+
+.displays {
+  margin: -300px;
+}

@@ -1,0 +1,59 @@
+/* Characters display */
+
+.display-off .segment-a,
+.display-off .segment-b,
+.display-off .segment-c,
+.display-off .segment-d,
+.display-off .segment-e,
+.display-off .segment-f,
+.display-off .segment-g {
+  opacity: 0.1;
+}
+
+.display-0 .segment-g {
+  opacity: 0.1;
+}
+
+.display-1 .segment-a,
+.display-1 .segment-d,
+.display-1 .segment-e,
+.display-1 .segment-f,
+.display-1 .segment-g {
+  opacity: 0.1;
+}
+
+.display-2 .segment-c,
+.display-2 .segment-f {
+  opacity: 0.1;
+}
+
+.display-3 .segment-e,
+.display-3 .segment-f {
+  opacity: 0.1;
+}
+
+.display-4 .segment-a,
+.display-4 .segment-d,
+.display-4 .segment-e {
+  opacity: 0.1;
+}
+
+.display-5 .segment-b,
+.display-5 .segment-e {
+  opacity: 0.1;
+}
+
+.display-6 .segment-b {
+  opacity: 0.1;
+}
+
+.display-7 .segment-d,
+.display-7 .segment-e,
+.display-7 .segment-f,
+.display-7 .segment-g {
+  opacity: 0.1;
+}
+
+.display-9 .segment-e {
+  opacity: 0.1;
+}

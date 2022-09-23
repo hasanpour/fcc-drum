@@ -2,14 +2,14 @@ import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
 export default function DrumPad(props) {
-  const { pad, setCurrentPad } = props;
+  const { pad, setAudioName } = props;
 
   const audioRef = useRef(null);
 
   const playAudio = () => {
     audioRef.current.currentTime = 0;
     audioRef.current.play();
-    setCurrentPad(pad.name);
+    setAudioName(pad.name);
   };
 
   const handleKeyDown = (event) => {
@@ -57,5 +57,5 @@ export default function DrumPad(props) {
 
 DrumPad.propTypes = {
   pad: PropTypes.instanceOf(Object).isRequired,
-  setCurrentPad: PropTypes.func.isRequired,
+  setAudioName: PropTypes.func.isRequired,
 };
