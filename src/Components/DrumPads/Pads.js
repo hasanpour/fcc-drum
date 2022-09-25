@@ -1,12 +1,12 @@
-import cabasa from './assets/sounds/CABASA.mp3';
-import tamb from './assets/sounds/TAMB.mp3';
-import conga from './assets/sounds/CONGA.mp3';
-import cowb from './assets/sounds/COWB.mp3';
-import claps from './assets/sounds/CLAPS.mp3';
-import bongo from './assets/sounds/BONGO.mp3';
-import hihat from './assets/sounds/HIHAT.mp3';
-import toms from './assets/sounds/TOMS.mp3';
-import snare from './assets/sounds/SNARE.mp3';
+import cabasa from '../../assets/sounds/CABASA.mp3';
+import tamb from '../../assets/sounds/TAMB.mp3';
+import conga from '../../assets/sounds/CONGA.mp3';
+import cowb from '../../assets/sounds/COWB.mp3';
+import claps from '../../assets/sounds/CLAPS.mp3';
+import bongo from '../../assets/sounds/BONGO.mp3';
+import hihat from '../../assets/sounds/HIHAT.mp3';
+import toms from '../../assets/sounds/TOMS.mp3';
+import snare from '../../assets/sounds/SNARE.mp3';
 
 const Pads = [
   {

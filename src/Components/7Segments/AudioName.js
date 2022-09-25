@@ -5,12 +5,12 @@ import './7segment.css';
 import './AudioName.css';
 
 export default function AudioName(props) {
-  const { audioName } = props;
+  const { audioName, isOn } = props;
 
   const displayClasses = [];
 
   for (let i = 0; i < 6; i += 1) {
-    if (!audioName[i]) {
+    if (!audioName[i] || !isOn) {
       displayClasses[i] = 'display-container display-off';
     } else {
       displayClasses[i] = `display-container display-${audioName[i].toLowerCase()}`;
@@ -83,4 +83,5 @@ export default function AudioName(props) {
 
 AudioName.propTypes = {
   audioName: PropTypes.string.isRequired,
+  isOn: PropTypes.bool.isRequired,
 };

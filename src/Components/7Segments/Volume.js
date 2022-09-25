@@ -5,12 +5,17 @@ import './7segment.css';
 import './Volume.css';
 
 export default function Volume(props) {
-  const { volume } = props;
+  const { volume, isOn } = props;
 
   let display1Class = 'display-container display-';
   let display2Class = 'display-container display-';
   let display3Class = 'display-container display-';
-  if (volume === 100) {
+
+  if (!isOn) {
+    display1Class += 'off';
+    display2Class += 'off';
+    display3Class += 'off';
+  } else if (volume === 100) {
     display1Class += '1';
     display2Class += '0';
     display3Class += '0';
@@ -63,4 +68,5 @@ export default function Volume(props) {
 
 Volume.propTypes = {
   volume: PropTypes.number.isRequired,
+  isOn: PropTypes.bool.isRequired,
 };

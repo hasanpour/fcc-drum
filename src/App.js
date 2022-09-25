@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
-import Pads from './Pads';
-import DrumPad from './Components/DrumPads';
+import Pads from './Components/DrumPads/Pads';
+import DrumPad from './Components/DrumPads/DrumPads';
 import Volume from './Components/7Segments/Volume';
 import AudioName from './Components/7Segments/AudioName';
+import OnOffController from './Components/OnOffController/OnOffController';
 import Logo from './assets/images/logo.png';
 
 import './App.css';
@@ -12,6 +13,7 @@ export default function App() {
   // eslint-disable-next-line no-unused-vars
   const [volume, setVolume] = useState(100);
   const [audioName, setAudioName] = useState('');
+  const [isOn, setIsOn] = useState(true);
 
   return (
     <>
@@ -28,6 +30,7 @@ export default function App() {
                 key={pad.id}
                 pad={pad}
                 setAudioName={setAudioName}
+                isOn={isOn}
               />
             ))}
           </div>
@@ -36,10 +39,12 @@ export default function App() {
             <Volume
               className="display__volume"
               volume={volume}
+              isOn={isOn}
             />
             <AudioName
               id="display"
               audioName={audioName}
+              isOn={isOn}
             />
           </div>
         </div>
@@ -48,9 +53,11 @@ export default function App() {
           <div className="controllers__volume">
             <p>volume</p>
           </div>
-          <div className="controllers__on-off">
-            <p>on-off</p>
-          </div>
+          <OnOffController
+            isOn={isOn}
+            setIsOn={setIsOn}
+            setAudioName={setAudioName}
+          />
         </div>
       </main>
     </>
