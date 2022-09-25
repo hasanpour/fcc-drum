@@ -18,61 +18,65 @@ export default function AudioName(props) {
   }
 
   return (
-    <div className="clock-container">
-      <div className={displayClasses[0]}>
-        <div className="segment-x segment-a"><span className="segment-border" /></div>
-        <div className="segment-y segment-b"><span className="segment-border" /></div>
-        <div className="segment-y segment-c"><span className="segment-border" /></div>
-        <div className="segment-x segment-d"><span className="segment-border" /></div>
-        <div className="segment-y segment-e"><span className="segment-border" /></div>
-        <div className="segment-y segment-f"><span className="segment-border" /></div>
-        <div className="segment-x segment-g"><span className="segment-border" /></div>
+    <div className="display__label">
+      <div className="s-sgm-container">
+        <div className={displayClasses[0]}>
+          <div className="segment-x segment-a"><span className="segment-border" /></div>
+          <div className="segment-y segment-b"><span className="segment-border" /></div>
+          <div className="segment-y segment-c"><span className="segment-border" /></div>
+          <div className="segment-x segment-d"><span className="segment-border" /></div>
+          <div className="segment-y segment-e"><span className="segment-border" /></div>
+          <div className="segment-y segment-f"><span className="segment-border" /></div>
+          <div className="segment-x segment-g"><span className="segment-border" /></div>
+        </div>
+        <div className={displayClasses[1]}>
+          <div className="segment-x segment-a"><span className="segment-border" /></div>
+          <div className="segment-y segment-b"><span className="segment-border" /></div>
+          <div className="segment-y segment-c"><span className="segment-border" /></div>
+          <div className="segment-x segment-d"><span className="segment-border" /></div>
+          <div className="segment-y segment-e"><span className="segment-border" /></div>
+          <div className="segment-y segment-f"><span className="segment-border" /></div>
+          <div className="segment-x segment-g"><span className="segment-border" /></div>
+        </div>
+        <div className={displayClasses[2]}>
+          <div className="segment-x segment-a"><span className="segment-border" /></div>
+          <div className="segment-y segment-b"><span className="segment-border" /></div>
+          <div className="segment-y segment-c"><span className="segment-border" /></div>
+          <div className="segment-x segment-d"><span className="segment-border" /></div>
+          <div className="segment-y segment-e"><span className="segment-border" /></div>
+          <div className="segment-y segment-f"><span className="segment-border" /></div>
+          <div className="segment-x segment-g"><span className="segment-border" /></div>
+        </div>
+        <div className={displayClasses[3]}>
+          <div className="segment-x segment-a"><span className="segment-border" /></div>
+          <div className="segment-y segment-b"><span className="segment-border" /></div>
+          <div className="segment-y segment-c"><span className="segment-border" /></div>
+          <div className="segment-x segment-d"><span className="segment-border" /></div>
+          <div className="segment-y segment-e"><span className="segment-border" /></div>
+          <div className="segment-y segment-f"><span className="segment-border" /></div>
+          <div className="segment-x segment-g"><span className="segment-border" /></div>
+        </div>
+        <div className={displayClasses[4]}>
+          <div className="segment-x segment-a"><span className="segment-border" /></div>
+          <div className="segment-y segment-b"><span className="segment-border" /></div>
+          <div className="segment-y segment-c"><span className="segment-border" /></div>
+          <div className="segment-x segment-d"><span className="segment-border" /></div>
+          <div className="segment-y segment-e"><span className="segment-border" /></div>
+          <div className="segment-y segment-f"><span className="segment-border" /></div>
+          <div className="segment-x segment-g"><span className="segment-border" /></div>
+        </div>
+        <div className={displayClasses[5]}>
+          <div className="segment-x segment-a"><span className="segment-border" /></div>
+          <div className="segment-y segment-b"><span className="segment-border" /></div>
+          <div className="segment-y segment-c"><span className="segment-border" /></div>
+          <div className="segment-x segment-d"><span className="segment-border" /></div>
+          <div className="segment-y segment-e"><span className="segment-border" /></div>
+          <div className="segment-y segment-f"><span className="segment-border" /></div>
+          <div className="segment-x segment-g"><span className="segment-border" /></div>
+        </div>
       </div>
-      <div className={displayClasses[1]}>
-        <div className="segment-x segment-a"><span className="segment-border" /></div>
-        <div className="segment-y segment-b"><span className="segment-border" /></div>
-        <div className="segment-y segment-c"><span className="segment-border" /></div>
-        <div className="segment-x segment-d"><span className="segment-border" /></div>
-        <div className="segment-y segment-e"><span className="segment-border" /></div>
-        <div className="segment-y segment-f"><span className="segment-border" /></div>
-        <div className="segment-x segment-g"><span className="segment-border" /></div>
-      </div>
-      <div className={displayClasses[2]}>
-        <div className="segment-x segment-a"><span className="segment-border" /></div>
-        <div className="segment-y segment-b"><span className="segment-border" /></div>
-        <div className="segment-y segment-c"><span className="segment-border" /></div>
-        <div className="segment-x segment-d"><span className="segment-border" /></div>
-        <div className="segment-y segment-e"><span className="segment-border" /></div>
-        <div className="segment-y segment-f"><span className="segment-border" /></div>
-        <div className="segment-x segment-g"><span className="segment-border" /></div>
-      </div>
-      <div className={displayClasses[3]}>
-        <div className="segment-x segment-a"><span className="segment-border" /></div>
-        <div className="segment-y segment-b"><span className="segment-border" /></div>
-        <div className="segment-y segment-c"><span className="segment-border" /></div>
-        <div className="segment-x segment-d"><span className="segment-border" /></div>
-        <div className="segment-y segment-e"><span className="segment-border" /></div>
-        <div className="segment-y segment-f"><span className="segment-border" /></div>
-        <div className="segment-x segment-g"><span className="segment-border" /></div>
-      </div>
-      <div className={displayClasses[4]}>
-        <div className="segment-x segment-a"><span className="segment-border" /></div>
-        <div className="segment-y segment-b"><span className="segment-border" /></div>
-        <div className="segment-y segment-c"><span className="segment-border" /></div>
-        <div className="segment-x segment-d"><span className="segment-border" /></div>
-        <div className="segment-y segment-e"><span className="segment-border" /></div>
-        <div className="segment-y segment-f"><span className="segment-border" /></div>
-        <div className="segment-x segment-g"><span className="segment-border" /></div>
-      </div>
-      <div className={displayClasses[5]}>
-        <div className="segment-x segment-a"><span className="segment-border" /></div>
-        <div className="segment-y segment-b"><span className="segment-border" /></div>
-        <div className="segment-y segment-c"><span className="segment-border" /></div>
-        <div className="segment-x segment-d"><span className="segment-border" /></div>
-        <div className="segment-y segment-e"><span className="segment-border" /></div>
-        <div className="segment-y segment-f"><span className="segment-border" /></div>
-        <div className="segment-x segment-g"><span className="segment-border" /></div>
-      </div>
+      {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+      <label>NAME</label>
     </div>
   );
 }
