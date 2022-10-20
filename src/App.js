@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
-import Pads from './Components/DrumPads/Pads';
-import DrumPad from './Components/DrumPads/DrumPads';
+import Pads from './Components/DrumPad/Pads';
+import DrumPad from './Components/DrumPad/DrumPad';
 import Volume from './Components/7Segments/Volume';
 import AudioName from './Components/7Segments/AudioName';
 import OnOffController from './Components/OnOffController/OnOffController';
+import VolumeSlider from './Components/VolumeSlider/VolumeSlider';
 import Logo from './assets/images/logo.png';
 
 import './App.css';
 
 export default function App() {
-  // eslint-disable-next-line no-unused-vars
   const [volume, setVolume] = useState(100);
   const [audioName, setAudioName] = useState('');
   const [isOn, setIsOn] = useState(true);
@@ -31,6 +31,7 @@ export default function App() {
                 pad={pad}
                 setAudioName={setAudioName}
                 isOn={isOn}
+                volume={volume}
               />
             ))}
           </div>
@@ -50,9 +51,7 @@ export default function App() {
         </div>
 
         <div className="controllers">
-          <div className="controllers__volume">
-            <p>volume</p>
-          </div>
+          <VolumeSlider setVolume={setVolume} />
           <OnOffController
             isOn={isOn}
             setIsOn={setIsOn}

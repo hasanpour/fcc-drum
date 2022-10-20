@@ -1,16 +1,24 @@
-import React, { useEffect, useRef } from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 
-import './DrumPads.css';
+import './DrumPad.css';
 
 export default function DrumPad(props) {
-  const { pad, setAudioName, isOn } = props;
+  const {
+    pad,
+    setAudioName,
+    isOn,
+    volume,
+  } = props;
 
+  const [isActive, setIsActive] = useState(false);
   const audioRef = useRef(null);
 
   const playAudio = () => {
     if (isOn) {
       audioRef.current.currentTime = 0;
+      audioRef.current.volume = volume / 100;
       audioRef.current.play();
       setAudioName(pad.name);
     }
@@ -19,14 +27,13 @@ export default function DrumPad(props) {
   const handleKeyDown = (event) => {
     if (event.keyCode === pad.keyCode) {
       playAudio();
-      document.getElementById(pad.id).classList.add('active');
+      setIsActive(true);
     }
   };
 
   const handleKeyUp = (event) => {
     if (event.keyCode === pad.keyCode) {
-      // playAudio();
-      document.getElementById(pad.id).classList.remove('active');
+      setIsActive(false);
     }
   };
 
@@ -38,7 +45,7 @@ export default function DrumPad(props) {
       document.removeEventListener('keydown', handleKeyDown);
       document.removeEventListener('keyup', handleKeyUp);
     };
-  }, []);
+  }, [volume, isOn]);
 
   return (
     <div className="pad">
@@ -47,7 +54,7 @@ export default function DrumPad(props) {
       </label>
       <button
         id={pad.id}
-        className="drum-pad"
+        className={isActive ? 'drum-pad active' : 'drum-pad'}
         type="button"
         onClick={() => playAudio()}
       >
@@ -63,4 +70,5 @@ DrumPad.propTypes = {
   pad: PropTypes.instanceOf(Object).isRequired,
   setAudioName: PropTypes.func.isRequired,
   isOn: PropTypes.bool.isRequired,
+  volume: PropTypes.number.isRequired,
 };
