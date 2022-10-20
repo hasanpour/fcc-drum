@@ -18,7 +18,8 @@ export default function AudioName(props) {
   }
 
   return (
-    <div className="display__label">
+    <div id="display" className="display__label">
+      <p className="display__label--hidden">{audioName}</p>
       <div className="s-sgm-container">
         <div className={displayClasses[0]}>
           <div className="segment-x segment-a"><span className="segment-border" /></div>
@@ -76,7 +77,12 @@ export default function AudioName(props) {
         </div>
       </div>
       {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-      <label>NAME</label>
+      <label>
+        NAME
+        {audioName ? ':' : ''}
+        {' '}
+        {audioName}
+      </label>
     </div>
   );
 }

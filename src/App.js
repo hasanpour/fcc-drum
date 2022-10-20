@@ -43,7 +43,6 @@ export default function App() {
               isOn={isOn}
             />
             <AudioName
-              id="display"
               audioName={audioName}
               isOn={isOn}
             />

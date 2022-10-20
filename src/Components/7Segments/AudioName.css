@@ -1,3 +1,8 @@
+/* Used to pass fcc tests */
+.display__label--hidden{
+  display: none;
+}
+
 /* Characters display */
 
 .display-a .segment-d {
