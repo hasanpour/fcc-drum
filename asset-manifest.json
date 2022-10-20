@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fcc-drum/static/css/main.5ccc42f0.css",
+    "main.js": "/fcc-drum/static/js/main.1dc9a82d.js",
+    "static/media/HIHAT.mp3": "/fcc-drum/static/media/HIHAT.1018f3f4eb5ee2741073.mp3",
+    "static/media/TOMS.mp3": "/fcc-drum/static/media/TOMS.5a7469c56e3fda7c8e8f.mp3",
+    "static/media/CONGA.mp3": "/fcc-drum/static/media/CONGA.65edd2a9c148e3150ac2.mp3",
+    "static/media/CLAPS.mp3": "/fcc-drum/static/media/CLAPS.4397cfd1ecb7d38cd8a9.mp3",
+    "static/media/TAMB.mp3": "/fcc-drum/static/media/TAMB.a5b5d7fa559dc9d71edc.mp3",
+    "static/media/BONGO.mp3": "/fcc-drum/static/media/BONGO.df11f9ad245a2269beae.mp3",
+    "static/media/COWB.mp3": "/fcc-drum/static/media/COWB.8bf2123d7fa553ee8b64.mp3",
+    "static/media/SNARE.mp3": "/fcc-drum/static/media/SNARE.84e477089dd4ee49f79c.mp3",
+    "static/media/CABASA.mp3": "/fcc-drum/static/media/CABASA.1a9371bfa6d3f4089776.mp3",
+    "index.html": "/fcc-drum/index.html",
+    "main.5ccc42f0.css.map": "/fcc-drum/static/css/main.5ccc42f0.css.map",
+    "main.1dc9a82d.js.map": "/fcc-drum/static/js/main.1dc9a82d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ccc42f0.css",
+    "static/js/main.1dc9a82d.js"
+  ]
+}
